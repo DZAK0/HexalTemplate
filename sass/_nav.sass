@@ -1,0 +1,50 @@
+nav
+    display: flex;
+    background-color: $bg-dark;
+    height: 50px;
+    &:after
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin-left: -45px;
+        height: 0;
+        display: block;
+        border-top: 26px solid $bg-dark;
+        border-left: 45px solid transparent;
+        border-right: 45px solid transparent;
+        z-index: -1;
+    li
+        list-style: none;
+        height: 40px;
+        &:hover a
+            color: $bg-green;
+
+ul.left, ul.right
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 60px
+    text-align: center;
+    a
+        text-decoration: none;
+        color: white;
+        line-height: 50px;
+        padding: 20px;
+
+div.logo
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 10%);
+    position: absolute;
+    background: url(../img/logo.png) no-repeat;
+    height: 60px;
+    width: 65px;
+
+ul.left
+    justify-content: flex-end;
+    padding-right: 40px;
+
+ul.right
+    justify-content: flex-start;
+    margin-left: 40px;

@@ -1,0 +1,45 @@
+.wrapper-about-me
+    background-color: $bg-green;
+    padding: 50px 0;
+    position: relative;
+    &:after
+        content: "";
+        height: 0;
+        display: block;
+        position: absolute;
+        top: -20px;
+        width: 60%;
+        right: calc(40% / 2);
+        border-bottom: 1px solid $bg-light;
+        opacity: 0.3;
+    section
+        max-width: 960px;
+        margin: 0 auto;
+
+            
+.main-about
+    display: flex;
+    .opis
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        h1
+            color: #d7fcf5;
+            font-size: 30px;
+            font-weight: 300;
+        h2
+            font-weight: 300;
+            color: #20816d;
+            margin-bottom: 10px;
+        p
+            color: #d7fcf5;
+            font-weight: 300;
+        .zdjecia
+            font-size: 0;
+            margin-top: 30px;
+            align-self: flex-end;
+            img
+                transition: 0.3s;
+            a:hover
+                img
+                    opacity: 0.5;
