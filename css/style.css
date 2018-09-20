@@ -47,6 +47,7 @@ ul.left, ul.right {
 }
 
 ul.left a, ul.right a {
+  text-transform: uppercase;
   text-decoration: none;
   color: white;
   line-height: 50px;
