@@ -49,3 +49,18 @@ ul.left
 ul.right
     justify-content: flex-start;
     margin-left: 40px;
+
+@media (max-width: 768px)
+    nav
+        ul.left
+            padding-right: 30px;
+        ur.right
+            padding-left: 30px;
+
+@media (max-width: 640px)
+    ul.left, ul.right
+        a
+            line-height: 50px;
+            font-size: 12px;
+            padding: 5px;
+

@@ -7,17 +7,35 @@
 ul
     &.top
         display: flex;
-        justify-content: space-evenly;
-        margin: 0 20px;
+        justify-content: center;
+        margin: -30px 0;
+        li
+            margin: 0 20px 0 0;
     &.center
         display: flex;
-        justify-content: space-around;
-        margin: -40px -60px;
+        justify-content: center;
+        li
+            margin: 0 20px 0 0;
     &.bottom
         display: flex;
-        justify-content: space-evenly;
-        margin: 0 20px;
+        justify-content: center;
+        margin: -30px 0;
+        li
+            margin: 0 20px 0 0;
 
+@media (max-width: 768px)
+    img.pf
+        width: 120px;
+@media (max-width: 648px)
+    .portfolio-wrapper
+        margin: 50px auto 30px;
+    ul.top, ul.bottom
+        margin: -20px 0;
+    img.pf
+        width: 100px;
+@media (max-width: 440px)
+    img.pf
+        width: 50px;
 
 .switch ul
     display: flex;
@@ -32,3 +50,5 @@ ul
             height: 6px;
             background-color: #ddd2c5;
             margin: 3px;
+    @media (max-width: 768px)
+        margin: 20px 0 0 20px;
